@@ -1,0 +1,129 @@
+body {
+  background-color: black;
+}
+
+.game__set {
+  position: relative;
+  text-align: center;
+}
+
+.game__background {
+  width: 80%;
+  height: 80%;
+  border-radius: 30px;
+}
+
+.game__status {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game__start {
+  font-size: 40px;
+  background-color: beige;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+}
+
+.game__stop {
+  font-size: 40px;
+  background-color: beige;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+  display: none;
+}
+
+.active {
+  display: inline-block;
+}
+
+.game__stop:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+.game__start:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+.game__timer {
+  background: beige;
+  width: 150px;
+  height: 40px;
+  margin: 10px 0;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.game__count {
+  background-color: beige;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin: auto;
+  font-size: 30px;
+  line-height: 200%;
+}
+
+.replay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.play {
+  visibility: visible;
+}
+
+.replay__button {
+  font-size: 60px;
+  margin-top: 30px;
+  background-color: beige;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.replay__button:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+.replay__text {
+  font-size: 40px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.game__playground {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 220px;
+}
+
+.game__carrot {
+  position: absolute;
+  cursor: pointer;
+}
+
+.game__bug {
+  position: absolute;
+  cursor: pointer;
+}
