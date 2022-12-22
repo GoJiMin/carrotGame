@@ -21,8 +21,9 @@ body {
 }
 
 .game__start {
+  border: 4px solid black;
   font-size: 40px;
-  background-color: beige;
+  background-color: burlywood;
   border-radius: 10px;
   cursor: pointer;
   transition: all 300ms ease-in;
@@ -30,7 +31,8 @@ body {
 
 .game__stop {
   font-size: 40px;
-  background-color: beige;
+  background-color: burlywood;
+  border: 4px solid black;
   border-radius: 10px;
   cursor: pointer;
   transition: all 300ms ease-in;
@@ -52,24 +54,27 @@ body {
 }
 
 .game__timer {
-  background: beige;
+  background: white;
   width: 150px;
   height: 40px;
   margin: 10px 0;
-  border: 2px solid black;
+  border: 4px solid black;
   border-radius: 10px;
   font-size: 30px;
+  font-weight: bolder;
 }
 
 .game__count {
-  background-color: beige;
+  background-color: salmon;
+  color: white;
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 4px solid black;
   margin: auto;
-  font-size: 30px;
-  line-height: 200%;
+  font-size: 45px;
+  line-height: 140%;
+  font-weight: bolder;
 }
 
 .replay {
@@ -92,7 +97,8 @@ body {
 .replay__button {
   font-size: 60px;
   margin-top: 30px;
-  background-color: beige;
+  background-color: burlywood;
+  border: 4px solid black;
   border-radius: 10px;
   cursor: pointer;
 }

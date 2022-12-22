@@ -75,8 +75,9 @@ function timerStop() {
 }
 
 function countDown() {
-  timer.innerHTML = `0 : ` + timeLeft;
+  timer.innerHTML = `00:0` + timeLeft;
   if (timeLeft <= 0) {
+    bgm.pause();
     clearInterval(timeCron);
     replay.classList.toggle("play");
     replayText.innerHTML = `Game Over`;
@@ -91,14 +92,13 @@ function gameStart() {
 
 function gameOver() {
   timeLeft = 9;
-  timer.innerHTML = "0 : 10";
+  timer.innerHTML = "00:10";
   playGround.replaceChildren();
   makeElement();
   timerStart();
 }
 
 startBtn.addEventListener("click", () => {
-  alertWav.play();
   bgm.play();
   startBtn.remove();
   stopBtn.classList.toggle("active");
@@ -122,7 +122,6 @@ stopBtn.addEventListener("click", () => {
 });
 
 replayBtn.addEventListener("click", () => {
-  alertWav.play();
   bgm.load();
   bgm.play();
   gameOver();
@@ -150,7 +149,7 @@ playGround.addEventListener("click", (e) => {
     gameWin.play();
     clearInterval(timeCron);
     replay.classList.toggle("play");
-    replayText.innerHTML = `You Win!!!`;
+    replayText.innerHTML = `You Won!!!`;
     overed = 1;
   }
 });
