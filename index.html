@@ -2,42 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Fun Game</title>
     <script
-      src="https://kit.fontawesome.com/b1d0f7c2f6.js"
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
       crossorigin="anonymous"
     ></script>
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="src/main.js" defer></script>
   </head>
   <body>
-    <section class="game__section">
-      <div class="game__set">
-        <img
-          class="game__background"
-          src="img/background.png"
-          alt="background"
-        />
-        <div class="game__status">
-          <button class="game__start">
-            <i class="fa-solid fa-play"></i>
-          </button>
-          <button class="game__stop">
-            <i class="fa-solid fa-pause"></i>
-          </button>
-          <div class="game__timer">00:10</div>
-          <div class="game__count">0</div>
-        </div>
-        <div class="game__playground"></div>
-        <div class="replay">
-          <button class="replay__button">
-            <i class="fa-solid fa-rotate-right"></i>
-          </button>
-          <div class="replay__text">Replay?</div>
-        </div>
-      </div>
+    <section class="game">
+      <header>
+        <button class="game__button">
+          <i class="fas fa-play"></i>
+        </button>
+        <span class="game__timer"> 00:00 </span>
+        <span class="game__score">0</span>
+      </header>
+      <section class="game__field"></section>
+    </section>
+    <section class="pop-up hide">
+      <header>
+        <button class="pop-up__refresh">
+          <i class="fas fa-redo"></i>
+        </button>
+        <span class="pop-up__message">You have WON!!!</span>
+      </header>
     </section>
   </body>
 </html>
